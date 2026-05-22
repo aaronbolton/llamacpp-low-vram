@@ -16,6 +16,8 @@ llama-server.exe ^
   --cache-type-k q8_0 ^
   --cache-type-v q8_0 ^
   --flash-attn on ^
+  --ui-mcp-proxy ^
+  --tools all ^  
   --hf-repo unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL
 
 REM Extra parameters for testing (included to enable)

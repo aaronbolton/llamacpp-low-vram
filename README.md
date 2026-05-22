@@ -1,4 +1,4 @@
-# llamacpp-low-vram
+# llama.cpp low vram setup
 
 ## Quick Start
 
@@ -20,4 +20,9 @@
 - **`--n-cpu-moe`** — Number of Mixture-of-Experts (MoE) layers to offload to the CPU. Increasing this value moves more model layers off the GPU, reducing VRAM usage but at the cost of inference speed.
 
 - **`--ctx-size`** — Context window size in tokens. This determines the size of the KV cache stored in VRAM. A larger context improves the model's ability to reference more previous text but requires significantly more VRAM.
+
+## Endpoints
+
+- **WebUI** — Enabled by default at http://0.0.0.0:8080
+- **OpenAI-Compatible API** — Enabled by default (no API key required) at http://0.0.0.0:8080/v1
 
